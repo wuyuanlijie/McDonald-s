@@ -1,0 +1,40 @@
+/* pages/integralmall/integralmall.wxss */
+Page{
+  width: 100%;
+}
+/*.integral{
+  width: 100%;
+  height: 400rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}*/
+
+.side-img {
+  margin-left:5%;
+  height: 350rpx;
+  width: 90%;
+}
+.arrowleft:before{
+  content: "";
+  display: inline-block;
+  width: 18rpx;
+  height: 18rpx;
+  border: 3rpx solid #A9A9A9;
+  border-left: none;
+  border-bottom: none;
+  transform: rotate(45deg);
+}
+
+
+.block:after{
+  content: "";
+  display: inline-block;
+  width: 18rpx;
+  height: 18rpx;
+  border: 3rpx solid #A9A9A9;
+  border-left: none;
+  border-bottom: none;
+  transform: rotate(45deg);
+}

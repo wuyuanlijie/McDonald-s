@@ -1,0 +1,29 @@
+<!--index.wxml-->
+
+
+<view class="index-block"  >
+  <view bindtap="bindViewIntegral" class="index-item">
+    <image class="index-item-img" src="/images/index_wallet.png"/>
+    <text class="index-item-name"> 我要积分</text>
+  </view>
+  <view bindtap="bindIntegralMall" class="index-item" >
+    <image class="index-item-img" src="/images/index_tag.png"/>
+    <text class="index-item-name"> 积分商城</text>
+  </view>
+  <view class="index-item">
+    <image class="index-item-img" src="/images/index_smile.png"/>
+    <text class="index-item-name">开心通告栏</text>
+  </view>
+  <view class="index-item">
+    <image class="index-item-img" src="/images/index_smile.png"/>
+    <text class="index-item-name">麦麦儿童会</text>
+  </view>
+  <view class="index-item">
+    <image class="index-item-img" src="/images/index_clown.png"/>
+    <text class="index-item-name">麦麦开心跳</text>
+  </view>
+  <view class="index-item">
+    <image class="index-item-img" src="/images/index_gift.png"/>
+    <text class="index-item-name">麦麦一起玩</text>
+  </view>
+</view>

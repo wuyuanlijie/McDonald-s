@@ -1,0 +1,53 @@
+<!--pages/userinfo/userinfo.wxml-->
+
+<view class="post-userList">
+  <block wx:for="{{userList}}" wx:key="userList">
+
+
+    <view class="userlogo">
+      <image class="userlogo-img" src="/images/beautylogo.jpg" />
+      <text class="userlogo-phone">{{item.phone}}</text>
+    </view>
+
+    <view class="userdata">
+      <view class="userdata-name">昵称</view>
+      <view class="userdata-symbol"></view>
+      <input class="userdata-input" type="text" placeholder="请输入昵称"  value="{{item.name}}"/>
+    </view>
+
+    <view class="userdata">
+      <view class="userdata-name" >性别</view>
+      <view class="userdata-symbol"></view>
+      <!-- <input class="userdata-input" type="text" value="{{item.sex}}" /> -->
+
+      <!-- 底部菜单表 -->
+      <text class="userdata-input" bindtap="actionSexTap">男</text>
+      <action-sheet hidden="{{actionSexHidden}}" bindchange="actionSexChange">
+        <block wx:for-items="{{actionSexItems}}" wx:key="">
+          <action-sheet-item class="item" bindtap="bind{{item}}">{{item}}</action-sheet-item>
+        </block>
+        <action-sheet-cancel class="cancell">取消</action-sheet-cancel>
+      </action-sheet>
+
+
+      <text class="righthead"></text>
+    </view>
+
+    <view class="userdata">
+      <view class="userdata-name">星座</view>
+      <view class="userdata-symbol"></view>
+      <input class="userdata-input" type="text"  value="{{item.constellation}}"/>
+      <text class="righthead"></text>
+    </view>
+
+    <view class="userdata">
+      <view class="userdata-name" >地区</view>
+      <view class="userdata-symbol"></view>
+      <input class="userdata-input" type="text" value="{{item.region}}"/>
+      <text class="righthead"></text>
+    </view>
+
+    <button  type="button" class="userbutton">保存</button>
+  </block>
+
+</view>

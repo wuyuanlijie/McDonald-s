@@ -1,0 +1,13 @@
+<!--pages/integralmall/integralmall.wxml-->
+<text>这里是积分兑换优惠券</text>
+<swiper class="swiper" indicator-dots="true"
+  autoPlay="false"  indicator-color="#e6e6e6"
+  indicator-active-color="#ffc324">
+  <text class="arrowleft"></text>
+  <block wx:for="{{imgUrls}}" wx:key="" class="block" >
+      <swiper-item>
+        <image src="/images/1coupon_one.png" class="side-img"/>
+      </swiper-item>
+  </block>
+  <text class="arrowright"></text>
+</swiper>

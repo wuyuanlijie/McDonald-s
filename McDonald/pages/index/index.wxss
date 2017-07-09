@@ -1,0 +1,30 @@
+/**index.wxss**/
+page{
+  height: 100%;
+}
+
+.index-item {
+  display: inline-block;
+  background: #ffc324;
+  height:356rpx;
+  width: 370rpx;
+  margin: 5rpx 5rpx -10rpx 0;
+  position: relative;
+
+}
+ .index-item-name {
+    position: absolute;
+    top: 253rpx;
+    left: 118rpx;
+    font-size: 33rpx;
+    font-weight: 400;
+    font-family:  monospace;
+
+}
+ .index-item-img{
+  height: 100rpx;
+  width: 100rpx;
+  position: absolute;
+  top:103rpx;
+  left: 135rpx;
+}
